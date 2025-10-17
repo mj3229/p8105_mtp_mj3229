@@ -1,0 +1,25 @@
+---
+title: "Midterm Project"
+subtitle: "Mahitha Jangeti"
+output: github_document
+---
+Mahitha Jangeti
+10/22/25
+```{r setup}
+library(tidyverse)
+library(readxl)
+library(haven)
+library(dplyr)
+library(ggridges)    
+library(patchwork)
+```
+
+## Problem 1
+
+
+```{r}
+mtp_df = 
+  read_excel("./mtp_data/mtp_data.xlsx") %>% 
+  janitor::clean_names() 
+```
+
